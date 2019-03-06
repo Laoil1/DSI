@@ -27,7 +27,7 @@ MonoBehaviour:
     ObstacleSpeed: 7
     MaxComboColor: 3
     NumberOfObstacle: 3
-    LevelColorOne: {r: 0.91375685, g: 0, b: 0.1, a: 1}
+    LevelColorOne: {r: 0, g: 0.03999734, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
