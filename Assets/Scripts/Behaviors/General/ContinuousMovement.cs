@@ -10,30 +10,25 @@ public class ContinuousMovement : MonoBehaviour
     public Vector3 direction;
 
     private bool isStoped;
+    private Coroutine contiMove;
 
     public void LaunchMove()
     {
-        StartCoroutine(ContinuousMove());
+        contiMove = StartCoroutine(ContinuousMove());
     }
 
     private IEnumerator ContinuousMove ()
     {
         yield return new WaitForSeconds(Time.deltaTime);
 
-        self.position += direction*speed*Time.deltaTime;
+        self.position += direction * speed * Time.deltaTime;
 
-        if(isStoped)
-        {
-            isStoped = false;
-            yield break;
-        }
-
-        StartCoroutine (ContinuousMove());
+        contiMove = StartCoroutine (ContinuousMove());
     }
 
     public void Stop()
     {
-        isStoped = true;
+        StopCoroutine(contiMove);
     }
 
 

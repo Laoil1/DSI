@@ -32,7 +32,7 @@ public class LevelManager : MonoBehaviour
     {
         currentLevel = lg.listOfLevels[levelNumberStart];
         AttributeColor();
-        LaunchCallLevel();
+       // LaunchCallLevel();
     }
     
     public void ChangeLevel()
