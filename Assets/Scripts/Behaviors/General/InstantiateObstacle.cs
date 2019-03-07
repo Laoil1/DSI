@@ -1,8 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class InstantiateEnemy : MonoBehaviour
+public enum TypeOfObstacle
+{
+    Rectangle,
+    Circle,
+    FortyFiveRect,
+    MinusFortyFiveRect,
+    //BlockBar,
+    LongBlocs,
+    Cross,
+    /*Hexa,
+    MovingHexa,
+    Donut,
+    FortyFiveBlocsFall,
+    Star,
+    Door,
+    Canon,
+    Spike,
+    Snake*/
+}
+
+public class InstantiateObstacle : MonoBehaviour
 {
 
     public bool availaible = true;
@@ -18,13 +39,19 @@ public class InstantiateEnemy : MonoBehaviour
     public Material matOne;
     public Material matTwo;
 
-    private ColorState cs;
+    public ColorState cs;
+
+    public TypeOfObstacle typeOfEnemy;
+
+    public UnityEvent OnInstantiate;
+    public UnityEvent OnDie;
 
     public ColorState Instantiate(Vector3 pos, float speed)
     {
-
-        col.enabled = true;
-        mr.enabled = true;
+        if(col!=null)
+            col.enabled = true;
+        if (mr != null)
+            mr.enabled = true;
 
         cs = (ColorState) Random.Range(0, 2);
         SetColor();
@@ -33,6 +60,8 @@ public class InstantiateEnemy : MonoBehaviour
         cm.LaunchMove();
 
         availaible = false;
+
+        OnInstantiate.Invoke();
 
         return cs;
     }
@@ -48,6 +77,8 @@ public class InstantiateEnemy : MonoBehaviour
 
         availaible = false;
 
+        OnInstantiate.Invoke();
+
         return cs;
     }
 
@@ -57,12 +88,14 @@ public class InstantiateEnemy : MonoBehaviour
         {
             case ColorState.ColorOne:
                 tag = "ColorOne";
-                mr.material = matOne;
+                if (mr != null)
+                    mr.material = matOne;
                 break;
 
             case ColorState.ColorTwo:
                 tag = "ColorTwo";
-                mr.material = matTwo;
+                if (mr != null)
+                    mr.material = matTwo;
                 break;
 
             default:
@@ -77,10 +110,13 @@ public class InstantiateEnemy : MonoBehaviour
         self.position = new Vector3(100f,100f,100f);
         cm.Stop();
 
-        mr.enabled = false;
-        cm.enabled = false;
+        if (mr != null)
+            mr.enabled = false;
 
+        if (col != null)
+            cm.enabled = false;
 
+        OnDie.Invoke();
     }
 
 }

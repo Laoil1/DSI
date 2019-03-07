@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8657384230130143948}
   - component: {fileID: 8657384230130143938}
   - component: {fileID: 1452459100}
-  - component: {fileID: 1452459101}
   - component: {fileID: 2685222874980734710}
   m_Layer: 0
   m_Name: GameManager
@@ -66,24 +65,22 @@ MonoBehaviour:
   graphicsEventsStateOne:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToOne
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 366df375577c54d4599b79327ffe99aa,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToTwo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1ea86e8d20de03b46b34e138034b6321,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -111,24 +108,22 @@ MonoBehaviour:
   graphicsEventsStateTwo:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToOne
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1ea86e8d20de03b46b34e138034b6321,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToTwo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 366df375577c54d4599b79327ffe99aa,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -196,21 +191,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   useTap: 1
---- !u!114 &1452459101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8657384230130143950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c947e21351794c3488b55bd3809fa2d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorOne: {r: 0.7169812, g: 0.38216448, b: 0.667087, a: 1}
-  colorTwo: {r: 0.8113208, g: 0.5830524, b: 0.36356357, a: 1}
-  colorSpeed: 0.1
 --- !u!114 &2685222874980734710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,36 +206,33 @@ MonoBehaviour:
   startEvents:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToOne
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 366df375577c54d4599b79327ffe99aa,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToTwo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1ea86e8d20de03b46b34e138034b6321,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1452459101}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeColorToOne
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 055148b84b927144080e023a9c17887a,
-            type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

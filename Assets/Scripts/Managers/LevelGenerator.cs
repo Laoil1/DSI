@@ -126,7 +126,9 @@ public class LevelGenerator : ScriptableObject
             Color _LevelColorOne = Color.Lerp (levelone.LevelColorOne, levelTwo.LevelColorOne,  _ratio);
             Color _LevelColorTwo = Color.Lerp(levelone.LevelColorTwo, levelTwo.LevelColorTwo, _ratio);
 
-            listOfLevels[i] = new Level(i, _TimeBetweenObstacle, _RandomTimeAddBetweenObstacle, _LevelColorOne, _LevelColorTwo, _ObstacleSpeed, _MaxComboColor, _NumberOfObstacle);
+            List<TypeOfObstacle> _ChunkGroup = levelone.chunkGroup;
+
+            listOfLevels[i] = new Level(i, _TimeBetweenObstacle, _RandomTimeAddBetweenObstacle, _LevelColorOne, _LevelColorTwo, _ObstacleSpeed, _MaxComboColor, _NumberOfObstacle, _ChunkGroup);
         }
     }
 

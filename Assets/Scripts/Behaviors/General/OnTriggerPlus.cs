@@ -11,7 +11,7 @@ public class OnTriggerPlus : MonoBehaviour
     // Ask simon tomorrow
     public bool IsTag;
     public bool UseSameTag;
-    public string EnteredTag{get; set;}
+    public string EnteredTag;
 
     public bool is2D;
     public UnityEvent consequences;
@@ -25,7 +25,8 @@ public class OnTriggerPlus : MonoBehaviour
             return;
         }
         if(IsTag)
-        {   if(UseSameTag)
+        {
+            if (UseSameTag)
             {
                 if (other.tag != tag)
                 {

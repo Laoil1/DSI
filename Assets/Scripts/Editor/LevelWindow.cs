@@ -160,7 +160,7 @@ public class LevelWindow : EditorWindow
         level.TimeBetweenObstacle = EditorGUILayout.FloatField("TimeBetweenObstacle", level.TimeBetweenObstacle);
         level.RandomTimeAddBetweenObstacle = EditorGUILayout.FloatField("RandomTimeAddBetweenObstacle", level.RandomTimeAddBetweenObstacle);
 
-
+        GetObstacle(level.chunkGroup);
 
         SettingDirty();
 
@@ -173,6 +173,27 @@ public class LevelWindow : EditorWindow
             lg.GenerateLevel();
             SettingDirty();
         }
+    }
+
+    private void GetObstacle(List<TypeOfObstacle> chunkGroup)
+    {
+
+        for (int i = 0; i < chunkGroup.Count; i++)
+        {
+            chunkGroup[i] = (TypeOfObstacle)EditorGUILayout.EnumPopup("Obstacles " + i.ToString(), chunkGroup[i]);
+        }
+
+        if (GUILayout.Button("+", GUILayout.Width(100)))
+        {
+            chunkGroup.Add(TypeOfObstacle.Rectangle);
+        }
+
+        if (GUILayout.Button("-", GUILayout.Width (100)))
+        {
+            chunkGroup.RemoveAt(chunkGroup.Count - 1);
+        }
+
+        EditorGUILayout.LabelField("");
     }
 
     private void SettingDirty()

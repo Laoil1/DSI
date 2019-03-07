@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4778899076461089320}
   - component: {fileID: 4778899076461089327}
   - component: {fileID: 4778899076461089326}
-  - component: {fileID: 4778899076461089325}
+  - component: {fileID: 2417922738957464330}
   - component: {fileID: 1165349442}
   - component: {fileID: 2704132718383930120}
   - component: {fileID: 1888866981465594884}
   - component: {fileID: 1399538737360201747}
   m_Layer: 0
-  m_Name: BaseEnemy
+  m_Name: Enemy_001_Circle
   m_TagString: ColorOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4778899076461089331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.93}
-  m_LocalScale: {x: 14, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4778899076461089331}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &4778899076461089326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4778899076461089325
-BoxCollider:
+--- !u!135 &2417922738957464330
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93,7 +93,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1165349442
 MonoBehaviour:
@@ -152,6 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTag: 1
   UseSameTag: 1
+  EnteredTag: 
+  IgnoredTag: 
   is2D: 0
   consequences:
     m_PersistentCalls:
@@ -190,6 +192,18 @@ MonoBehaviour:
   self: {fileID: 4778899076461089320}
   cm: {fileID: 1165349442}
   mr: {fileID: 4778899076461089326}
-  col: {fileID: 4778899076461089325}
+  col: {fileID: 2417922738957464330}
   matOne: {fileID: 2100000, guid: c4055895ec5936244975f1b5ddea4ed1, type: 2}
   matTwo: {fileID: 2100000, guid: 190aca532f5585343ab6a74e9718e336, type: 2}
+  cs: 0
+  typeOfEnemy: 2
+  OnInstantiate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

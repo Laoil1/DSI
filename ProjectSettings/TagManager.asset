@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ColorOne
   - ColorTwo
+  - Sol
   layers:
   - Default
   - TransparentFX

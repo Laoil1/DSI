@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PullManager : MonoBehaviour
 {
-    public InstantiateEnemy[] listEnemy;
+    public InstantiateObstacle[] listEnemy;
 
 
-    public InstantiateEnemy GetAvalaibleEnemy()
+    public InstantiateObstacle GetAvalaibleEnemy()
     {
         foreach (var ene in listEnemy)
         {
@@ -19,5 +19,18 @@ public class PullManager : MonoBehaviour
 
         return null;
     }
-   
+
+
+    public InstantiateObstacle GetAvalaibleEnemy(TypeOfObstacle typeOfEnnemy)
+    {
+        foreach (var ene in listEnemy)
+        {
+            if (ene.availaible == true)
+            {
+                if (ene.typeOfEnemy == typeOfEnnemy)
+                    return ene;
+            }
+        }
+        return null;
+    }
 }
