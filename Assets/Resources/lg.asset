@@ -33,7 +33,8 @@ MonoBehaviour:
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup: []
+    chunksGroup:
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -238,14 +239,14 @@ MonoBehaviour:
   tempLevelDivide: 1
   numberOfLevel: 0
   currentLevelGroup:
-    LevelNumber: 0
+    LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 1
+    ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 1
+    NumberOfChunks: 0
     chunkRandom: 0
-    LevelColorOne: {r: 1, g: 0, b: 0, a: 1}
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
     - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
@@ -270,7 +271,8 @@ MonoBehaviour:
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup: []
+    chunksGroup:
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
