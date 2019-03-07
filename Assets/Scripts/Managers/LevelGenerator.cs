@@ -32,14 +32,14 @@ public class LevelGenerator : ScriptableObject
     public void GenerateLevelsBase()
     {
         listOfLevels = new List<Level>();
-        listOfLevels.Add(new Level(0, 1.5f, 0.5f, Color.white, Color.black, 7f, 3));
+        listOfLevels.Add(new Level(0, 1.5f, 0.5f, Color.white, Color.black, 1f, 3));
     }
 
     public void AddLevels(int number)
     {
         for (int i = 0; i < number; i++)
         {
-            listOfLevels.Add(new Level(0, 1.5f, 0.5f, Color.white, Color.black, 7f, 3));
+            listOfLevels.Add(new Level(0, 1.5f, 0.5f, Color.white, Color.black, 1f, 3));
         }
     }
 

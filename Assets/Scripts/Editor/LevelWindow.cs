@@ -144,7 +144,7 @@ public class LevelWindow : EditorWindow
         if(level.chunkRandom)
             level.NumberOfChunks = EditorGUILayout.IntField("Number Of Chunks if Random", level.NumberOfChunks);
 
-        //level.ObstacleSpeed = EditorGUILayout.FloatField("ObstacleSpeed", level.ObstacleSpeed);
+        level.ObstacleSpeed = EditorGUILayout.FloatField("Obstacle Speed Multiplier", level.ObstacleSpeed);
 
         //level.TimeBetweenObstacle = EditorGUILayout.FloatField("TimeBetweenObstacle", level.TimeBetweenObstacle);
         //level.RandomTimeAddBetweenObstacle = EditorGUILayout.FloatField("RandomTimeAddBetweenObstacle", level.RandomTimeAddBetweenObstacle);

@@ -102,17 +102,17 @@ public class LevelManager : MonoBehaviour
             {
                 if (csAccumulatr == ColorState.ColorOne)
                 {
-                    csAccumulatr = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i], ColorState.ColorTwo);
+                    csAccumulatr = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i]*currentLevel.ObstacleSpeed, ColorState.ColorTwo);
                 }
                 else
                 {
-                    csAccumulatr = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i], ColorState.ColorOne);
+                    csAccumulatr = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i] * currentLevel.ObstacleSpeed, ColorState.ColorOne);
                 }
                 comboColor = 0;
             }
             else
             {
-                var tempCs = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i]);
+                var tempCs = pm.GetAvalaibleEnemy(chunkGroup.typeOfObstacle[i]).Instantiate(startTransform, chunkGroup.speed[i] * currentLevel.ObstacleSpeed);
                 if (tempCs == csAccumulatr)
                 {
                     comboColor++;
