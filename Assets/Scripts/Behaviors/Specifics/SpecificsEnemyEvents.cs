@@ -29,13 +29,17 @@ public class SpecificsEnemyEvents : MonoBehaviour
         GetComponent<MeshRenderer>().material = mat;
     }
 
+    private Coroutine rotate;
+
     public void LaunchRotate(float speed)
     {
-        StartCoroutine(Rotate(speed));
+        rotate = StartCoroutine(Rotate(speed));
     }
 
     private IEnumerator Rotate(float speed)
     {
+        yield return new WaitForSeconds(Time.deltaTime);
+
         yield return new WaitForSeconds(Time.deltaTime);
 
         transform.eulerAngles += new Vector3(0, speed * Time.deltaTime, 0);
@@ -71,5 +75,10 @@ public class SpecificsEnemyEvents : MonoBehaviour
     public void ActivateCollider(Collider mr)
     {
         mr.enabled = true;
+    }
+
+    public void StopRot ()
+    {
+        StopCoroutine(rotate);
     }
 }
