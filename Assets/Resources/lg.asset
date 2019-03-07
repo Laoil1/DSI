@@ -23,10 +23,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -37,10 +35,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -51,10 +47,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 3
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -65,10 +59,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 4
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -79,10 +71,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 5
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -93,10 +83,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 6
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -107,10 +95,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 7
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -121,10 +107,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 8
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -135,10 +119,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 9
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -149,10 +131,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -163,8 +143,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 11
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -175,8 +154,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 12
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -187,8 +165,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 13
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -199,8 +176,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 14
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -211,8 +187,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 15
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -223,8 +198,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 16
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -235,8 +209,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 17
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -247,8 +220,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 18
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -259,8 +231,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 19
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -271,8 +242,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 20
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -307,10 +277,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   levelGroups:
   - LevelNumber: 0
     TimeBetweenObstacle: 1.5
@@ -322,10 +290,8 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
-    - typeOfObstacle: 01000000
-      name: CG1
+    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
+    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -336,8 +302,7 @@ MonoBehaviour:
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - typeOfObstacle: 0000000000000000
-      name: Bonsoir
+    - {fileID: 0}
   - LevelNumber: 20
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -359,12 +324,7 @@ MonoBehaviour:
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup: []
   chunkGroups:
-  - typeOfObstacle: 0000000000000000
-    name: Bonsoir
-  - typeOfObstacle: 01000000
-    name: CG1
-  - typeOfObstacle: 
-    name: CG2
-  currentChunkGroup:
-    typeOfObstacle: 0000000000000000
-    name: Bonsoir
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentChunkGroup: {fileID: 0}

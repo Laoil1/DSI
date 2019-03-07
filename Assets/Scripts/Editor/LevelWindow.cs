@@ -19,7 +19,7 @@ public class LevelWindow : EditorWindow
     [MenuItem("DSI/LevelManager")]
     public static void Initialisation()
     {
-        var win = EditorWindow.GetWindow(typeof(LevelWindow), true, "LevelManager", true);
+        var win = EditorWindow.GetWindow(typeof(LevelWindow), false, "LevelManager", true);
         var size = new Vector2(500f, 350f);
 
         win.minSize = size;
@@ -44,18 +44,7 @@ public class LevelWindow : EditorWindow
     // Update is called once per frame
     private void OnGUI()
     {
-        ChooseWindowGUI();
-
-        switch (lwt)
-        {
-            case LevelWindowTab.Level:
-                LevelWindowGUI();
-                break;
-            case LevelWindowTab.ChunkGroups:
-                ChunkGroupWindowGUI();
-                break;
-        }
-
+        LevelWindowGUI();
     }
 
     private void LoadRessources()
@@ -155,10 +144,10 @@ public class LevelWindow : EditorWindow
         if(level.chunkRandom)
             level.NumberOfChunks = EditorGUILayout.IntField("Number Of Chunks if Random", level.NumberOfChunks);
 
-        level.ObstacleSpeed = EditorGUILayout.FloatField("ObstacleSpeed", level.ObstacleSpeed);
+        //level.ObstacleSpeed = EditorGUILayout.FloatField("ObstacleSpeed", level.ObstacleSpeed);
 
-        level.TimeBetweenObstacle = EditorGUILayout.FloatField("TimeBetweenObstacle", level.TimeBetweenObstacle);
-        level.RandomTimeAddBetweenObstacle = EditorGUILayout.FloatField("RandomTimeAddBetweenObstacle", level.RandomTimeAddBetweenObstacle);
+        //level.TimeBetweenObstacle = EditorGUILayout.FloatField("TimeBetweenObstacle", level.TimeBetweenObstacle);
+        //level.RandomTimeAddBetweenObstacle = EditorGUILayout.FloatField("RandomTimeAddBetweenObstacle", level.RandomTimeAddBetweenObstacle);
 
 
         GetChunkGroup(level.chunksGroup);
@@ -182,18 +171,20 @@ public class LevelWindow : EditorWindow
 
         for (int i = 0; i < chunkGroup.Count; i++)
         {
-            chunkGroup[i] = GetChunkGroupFromList("Chunk Group" + i, lg.chunkGroups, lg.chunkGroups.IndexOf(chunkGroup[i]));
+            chunkGroup[i] = EditorGUILayout.ObjectField("Chunk Group" + i.ToString(),chunkGroup[i],typeof(ChunkGroup),false) as ChunkGroup;
         }
 
         if (GUILayout.Button("+", GUILayout.Width(100)))
         {
-            chunkGroup.Add(lg.chunkGroups[0]);
+            chunkGroup.Add(null);
         }
 
         if (GUILayout.Button("-", GUILayout.Width (100)))
         {
             chunkGroup.RemoveAt(chunkGroup.Count - 1);
         }
+
+        SettingDirty();
 
         EditorGUILayout.LabelField("");
     }
