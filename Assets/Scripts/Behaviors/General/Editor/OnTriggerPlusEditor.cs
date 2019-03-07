@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(OnTriggerPlus))]
+//[CustomEditor(typeof(OnTriggerPlus))]
 public class OnTriggerPlusEditor : Editor
 {
     private OnTriggerPlus targetOTP;

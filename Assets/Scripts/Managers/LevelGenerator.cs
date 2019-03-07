@@ -25,6 +25,10 @@ public class LevelGenerator : ScriptableObject
 
     public List<Level> levelGroups;
 
+    public List<ChunkGroup> chunkGroups;
+    public ChunkGroup currentChunkGroup;
+
+
     public void GenerateLevelsBase()
     {
         listOfLevels = new List<Level>();
@@ -121,19 +125,31 @@ public class LevelGenerator : ScriptableObject
 
             int _MaxComboColor =  Mathf.FloorToInt( levelone.MaxComboColor + levelTwo.MaxComboColor * _ratio);
 
-            int _NumberOfObstacle = Mathf.FloorToInt(levelone.NumberOfObstacle + levelTwo.NumberOfObstacle * _ratio);
+            int _NumberOfChunks = Mathf.FloorToInt(levelone.NumberOfChunks + levelTwo.NumberOfChunks * _ratio);
 
             Color _LevelColorOne = Color.Lerp (levelone.LevelColorOne, levelTwo.LevelColorOne,  _ratio);
             Color _LevelColorTwo = Color.Lerp(levelone.LevelColorTwo, levelTwo.LevelColorTwo, _ratio);
 
-            List<TypeOfObstacle> _ChunkGroup = levelone.chunkGroup;
+            List<ChunkGroup> _ChunkGroup = levelone.chunksGroup;
 
-            listOfLevels[i] = new Level(i, _TimeBetweenObstacle, _RandomTimeAddBetweenObstacle, _LevelColorOne, _LevelColorTwo, _ObstacleSpeed, _MaxComboColor, _NumberOfObstacle, _ChunkGroup);
+            listOfLevels[i] = new Level(i, _TimeBetweenObstacle, _RandomTimeAddBetweenObstacle, _LevelColorOne, _LevelColorTwo, _ObstacleSpeed, _MaxComboColor, _NumberOfChunks, _ChunkGroup);
         }
     }
+
+
 
     public void AddOneLevel(Level level)
     {
         listOfLevels[listOfLevels.Count - 1] = level;
+    }
+
+    public void AddChunkGroup()
+    {
+        if(chunkGroups == null)
+        {
+            chunkGroups = new List<ChunkGroup>();
+        }
+        var _tempName = "CG" + chunkGroups.Count.ToString();
+        chunkGroups.Add(new ChunkGroup(_tempName));
     }
 }

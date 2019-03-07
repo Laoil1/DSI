@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorOne: {r: 1, g: 0.88928235, b: 0.033018887, a: 1}
   colorTwo: {r: 0, g: 0.21920681, b: 1, a: 1}
-  colorSpeed: 0.1
+  colorSpeed: 0.03
 --- !u!114 &2155536778102687124
 MonoBehaviour:
   m_ObjectHideFlags: 0

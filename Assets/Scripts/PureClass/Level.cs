@@ -15,13 +15,17 @@ public class Level
 
     public int MaxComboColor;
 
-    public int NumberOfObstacle = 3;
+    public int NumberOfChunks = 3;
+
+    public bool chunkRandom;
 
     public Color LevelColorOne;
     public Color LevelColorTwo;
 
     //public List<ChunkGroup> chunkGroup;
-    public List<TypeOfObstacle> chunkGroup;
+
+    public List<ChunkGroup> chunksGroup;
+
 
     public Level(int number, float tbo, float rtabo, Color colO, Color colT, float speed, int cc)
     {
@@ -32,11 +36,11 @@ public class Level
         LevelColorTwo = colT;
         ObstacleSpeed = speed;
         MaxComboColor = cc;
-        chunkGroup = new List<TypeOfObstacle>();
+        chunksGroup = new List<ChunkGroup>();
 
     }
 
-    public Level(int number, float tbo, float rtabo, Color colO, Color colT, float speed, int cc, int noo, List<TypeOfObstacle> too)
+    public Level(int number, float tbo, float rtabo, Color colO, Color colT, float speed, int cc, int noo, List<ChunkGroup> too)
     {
         LevelNumber = number;
         TimeBetweenObstacle = tbo;
@@ -45,16 +49,16 @@ public class Level
         LevelColorTwo = colT;
         ObstacleSpeed = speed;
         MaxComboColor = cc;
-        NumberOfObstacle = noo;
-        chunkGroup = too;
+        NumberOfChunks = noo;
+        chunksGroup = too;
 
 
     }
 
-    public TypeOfObstacle GetObstacle()
+    public ChunkGroup GetChunkCount()
     {
-        var _index = Random.Range(0, chunkGroup.Count);
+        var _index = Random.Range(0, chunksGroup.Count);
 
-        return chunkGroup[_index];
+        return chunksGroup[_index];
     }
 }
