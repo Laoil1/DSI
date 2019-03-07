@@ -2874,7 +2874,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1554409605712054612}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1554409605712054613}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a20f2c3fd39a1144b942417bef32873a, type: 3}
@@ -5341,7 +5341,7 @@ PrefabInstance:
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
@@ -5421,7 +5421,7 @@ PrefabInstance:
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
@@ -5442,22 +5442,22 @@ PrefabInstance:
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 964021841}
+      objectReference: {fileID: 1554409605712054614}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayLevel
+      value: LaunchActionWithDelay
       objectReference: {fileID: 0}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.UI.Text, UnityEngine.UI
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2028381571}
+      objectReference: {fileID: 0}
     - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -5478,6 +5478,11 @@ PrefabInstance:
       propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2028381572}
+    - target: {fileID: 8785668347464419311, guid: 3065bca58b1356b4fa02c453e78b6680,
+        type: 3}
+      propertyPath: atEndOfLevel.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1554409604889192598, guid: 3065bca58b1356b4fa02c453e78b6680,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5535,6 +5540,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3065bca58b1356b4fa02c453e78b6680, type: 3}
+--- !u!1 &1554409605712054613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554409604889192597, guid: 3065bca58b1356b4fa02c453e78b6680,
+    type: 3}
+  m_PrefabInstance: {fileID: 1554409605712054612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1554409605712054614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554409605712054613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd74e05f82a13ee45a14584455de035a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 964021841}
+        m_MethodName: DisplayLevel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2028381571}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1452459103}
+        m_MethodName: LaunchAnim
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2028381572}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &4439772066223894032
 PrefabInstance:
   m_ObjectHideFlags: 0
