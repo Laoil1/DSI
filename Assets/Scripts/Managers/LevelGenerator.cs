@@ -102,11 +102,21 @@ public class LevelGenerator : ScriptableObject
 
     public void GenerateLevel()
     {
-        for (int i = 0; i < levelGroups.Count-1; i++)
+        if(levelDivide==1)
         {
-            AddWithEvolution(levelGroups[i], levelGroups[i + 1]);
+            for (int i = 0; i < levelGroups.Count; i++)
+            {
+                AddOneLevel(levelGroups[i]);
+            }
         }
-        AddOneLevel(levelGroups[levelGroups.Count - 1]);
+        else
+        {
+            for (int i = 0; i < levelGroups.Count-1; i++)
+            {
+                AddWithEvolution(levelGroups[i], levelGroups[i + 1]);
+            }
+            AddOneLevel(levelGroups[levelGroups.Count - 1]);
+        }
     }
 
     public void AddWithEvolution(Level levelone, Level levelTwo)

@@ -16,7 +16,7 @@ MonoBehaviour:
   - LevelNumber: 0
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 1
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 1.6
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 2.2
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   - LevelNumber: 3
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 2.8000002
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
   - LevelNumber: 4
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 3.4
     MaxComboColor: 4
     NumberOfChunks: 4
     chunkRandom: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   - LevelNumber: 5
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 4
     MaxComboColor: 4
     NumberOfChunks: 4
     chunkRandom: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   - LevelNumber: 6
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 4.6000004
     MaxComboColor: 4
     NumberOfChunks: 4
     chunkRandom: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   - LevelNumber: 7
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 5.2
     MaxComboColor: 5
     NumberOfChunks: 4
     chunkRandom: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   - LevelNumber: 8
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 5.8
     MaxComboColor: 5
     NumberOfChunks: 4
     chunkRandom: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   - LevelNumber: 9
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 6.3999996
     MaxComboColor: 5
     NumberOfChunks: 4
     chunkRandom: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
     LevelNumber: 0
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 1
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 1
@@ -283,7 +283,7 @@ MonoBehaviour:
   - LevelNumber: 0
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 7
+    ObstacleSpeed: 1
     MaxComboColor: 3
     NumberOfChunks: 4
     chunkRandom: 1

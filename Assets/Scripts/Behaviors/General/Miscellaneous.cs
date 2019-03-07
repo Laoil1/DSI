@@ -25,5 +25,10 @@ public class Miscellaneous : MonoBehaviour
     {
         SceneManager.LoadScene(i);
     }
+
+    public void LaunchAnim(Animator ani)
+    {
+        ani.SetTrigger("Trigger");
+    }
     
 }

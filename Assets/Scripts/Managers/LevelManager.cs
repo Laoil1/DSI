@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
     private int comboColor;
 
     public UnityEvent atTheStartOfLevel;
+    public UnityEvent atEndOfLevel;
 
     private int obstacleInt;
     private bool isChunkLaunched;
@@ -45,6 +47,11 @@ public class LevelManager : MonoBehaviour
         atTheStartOfLevel.Invoke();
 
         LaunchCallLevel();
+    }
+
+    public void DisplayLevel(Text text)
+    {
+        text.text = (currentLevel.LevelNumber+1).ToString("00");
     }
 
     public void AttributeColor()
@@ -89,6 +96,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitWhile(() => isChunkLaunched);
         StartCoroutine(CallLevel(TypeOfObstacle.ChangeLevel));
+        atEndOfLevel.Invoke();
     }
 
     private IEnumerator CallChunkGroup(ChunkGroup chunkGroup)
