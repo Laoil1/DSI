@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4875621650196658946}
   m_Layer: 0
   m_Name: EndOfLevelObstacle
-  m_TagString: Untagged
+  m_TagString: ChangeLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTag: 0
   UseSameTag: 0
+  UseAnotherTag: 0
   EnteredTag: 
   is2D: 0
   consequences:
@@ -88,6 +89,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  consequencesAnotherTag:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   elseTagConsequences:

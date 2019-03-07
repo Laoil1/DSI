@@ -15,8 +15,6 @@ public class LevelManager : MonoBehaviour
 
     public int levelNumberStart;
 
-    public bool waitDuringLevel;
-
     public Level currentLevel;
 
     public GraphicsColorBeing gcb;
@@ -27,33 +25,26 @@ public class LevelManager : MonoBehaviour
     public UnityEvent atTheStartOfLevel;
 
     private int obstacleInt;
+    private bool isChunkLaunched;
 
     public void Awake()
     {
         currentLevel = lg.listOfLevels[levelNumberStart];
+
+        isChunkLaunched = false;
+
         AttributeColor();
         LaunchCallLevel();
     }
     
     public void ChangeLevel()
     {
-
+        
         currentLevel = lg.listOfLevels[currentLevel.LevelNumber + 1];
 
         atTheStartOfLevel.Invoke();
 
-        waitDuringLevel = false;
-    }
-
-    public void TestObstacle()
-    {
-        obstacleInt++;
-        if(obstacleInt >= currentLevel.NumberOfObstacle)
-        {
-            StartCoroutine(CallLevel(TypeOfObstacle.ChangeLevel));
-            waitDuringLevel = true;
-        }
-
+        LaunchCallLevel();
     }
 
     public void AttributeColor()
@@ -75,43 +66,72 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator CallLevel()
     {
-        yield return new WaitWhile(() => waitDuringLevel);
-
-        var delay = currentLevel.TimeBetweenObstacle + Random.Range(-currentLevel.RandomTimeAddBetweenObstacle, currentLevel.RandomTimeAddBetweenObstacle);
-
-        yield return new WaitForSeconds(delay);
-
-        //Check if the last obstacles wasnt the same color
-        if(comboColor >= currentLevel.MaxComboColor)
+        if(currentLevel.chunkRandom)
         {
-            if(csAccumulatr == ColorState.ColorOne)
+            foreach (var chunkGroup in currentLevel.chunksGroup)
             {
-                csAccumulatr = pm.GetAvalaibleEnemy(currentLevel.GetObstacle()).Instantiate(startTransform, currentLevel.ObstacleSpeed, ColorState.ColorTwo);
+                yield return new WaitWhile(() => isChunkLaunched);
+                isChunkLaunched = true;
+                StartCoroutine(CallChunkGroup(chunkGroup));
+
             }
-            else
-            {
-                csAccumulatr = pm.GetAvalaibleEnemy(currentLevel.GetObstacle()).Instantiate(startTransform, currentLevel.ObstacleSpeed, ColorState.ColorOne);
-            }
-            comboColor = 0;
+
         }
         else
         {
-            var tempCs = pm.GetAvalaibleEnemy(currentLevel.GetObstacle()).Instantiate(startTransform, currentLevel.ObstacleSpeed);
-            if (tempCs == csAccumulatr)
+            for (int i = 0; i < currentLevel.NumberOfChunks; i++)
             {
-                comboColor++;
-            }
-            else
-            {
-                comboColor = 0;
-                csAccumulatr = tempCs;
+                yield return new WaitWhile(() => isChunkLaunched);
+                isChunkLaunched = true;
+                var _randInt = Random.Range(0, currentLevel.chunksGroup.Count);
+                StartCoroutine(CallChunkGroup(currentLevel.chunksGroup[_randInt]));
             }
         }
 
-        TestObstacle();
-        //Equilibre le spawn des obstacle pour eviter d'en avoir 15 de la meme couleur
-        StartCoroutine(CallLevel());
+        yield return new WaitWhile(() => isChunkLaunched);
+        StartCoroutine(CallLevel(TypeOfObstacle.ChangeLevel));
     }
+
+    private IEnumerator CallChunkGroup(ChunkGroup chunkGroup)
+    {
+        foreach (var obstacle in chunkGroup.typeOfObstacle)
+        {
+            var delay = currentLevel.TimeBetweenObstacle + Random.Range(-currentLevel.RandomTimeAddBetweenObstacle, currentLevel.RandomTimeAddBetweenObstacle);
+
+            yield return new WaitForSeconds(delay);
+
+
+            //Check if the last obstacles wasnt the same color
+            if (comboColor >= currentLevel.MaxComboColor)
+            {
+                if (csAccumulatr == ColorState.ColorOne)
+                {
+                    csAccumulatr = pm.GetAvalaibleEnemy(obstacle).Instantiate(startTransform, currentLevel.ObstacleSpeed, ColorState.ColorTwo);
+                }
+                else
+                {
+                    csAccumulatr = pm.GetAvalaibleEnemy(obstacle).Instantiate(startTransform, currentLevel.ObstacleSpeed, ColorState.ColorOne);
+                }
+                comboColor = 0;
+            }
+            else
+            {
+                var tempCs = pm.GetAvalaibleEnemy(obstacle).Instantiate(startTransform, currentLevel.ObstacleSpeed);
+                if (tempCs == csAccumulatr)
+                {
+                    comboColor++;
+                }
+                else
+                {
+                    comboColor = 0;
+                    csAccumulatr = tempCs;
+                }
+            }
+        }
+
+        isChunkLaunched = false;
+    }
+
 
     private IEnumerator CallLevel(TypeOfObstacle typeOfObstacle)
     {

@@ -18,190 +18,281 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 3
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 4
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 5
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 6
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 7
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 8
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 9
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 4
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 11
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 12
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 13
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 14
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 15
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 16
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 4
-    NumberOfObstacle: 4
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 17
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 18
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 19
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 5
-    NumberOfObstacle: 5
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 20
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000300000005000000
+    chunksGroup: []
+  - LevelNumber: 21
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
   levelDivide: 10
   tempLevelDivide: 10
   numberOfLevel: 0
@@ -211,35 +302,69 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 1
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   levelGroups:
   - LevelNumber: 0
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 4
+    chunkRandom: 1
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000000000000000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
+    - typeOfObstacle: 01000000
+      name: CG1
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000200000001000000
+    chunksGroup:
+    - typeOfObstacle: 0000000000000000
+      name: Bonsoir
   - LevelNumber: 20
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfObstacle: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 000000000300000005000000
+    chunksGroup: []
+  - LevelNumber: 21
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  chunkGroups:
+  - typeOfObstacle: 0000000000000000
+    name: Bonsoir
+  - typeOfObstacle: 01000000
+    name: CG1
+  - typeOfObstacle: 
+    name: CG2
+  currentChunkGroup:
+    typeOfObstacle: 0000000000000000
+    name: Bonsoir

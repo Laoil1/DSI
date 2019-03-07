@@ -11,12 +11,12 @@ public class OnTriggerPlus : MonoBehaviour
     // Ask simon tomorrow
     public bool IsTag;
     public bool UseSameTag;
+    public bool UseAnotherTag;
     public string EnteredTag;
-    public string EnteredTagTwo;
 
     public bool is2D;
-    public UnityEvent consequencesSameTag;
-    public UnityEvent consequencesTag;
+    public UnityEvent consequences;
+    public UnityEvent consequencesAnotherTag;
     public UnityEvent elseTagConsequences;
 
 
@@ -30,21 +30,28 @@ public class OnTriggerPlus : MonoBehaviour
         {
             if (UseSameTag)
             {
-                if (other.tag != tag || other.tag !=EnteredTag)
+                if (other.tag == tag)
                 {
-                    elseTagConsequences.Invoke();
-                    return;
+                    consequences.Invoke();
                 }
-                consequencesSameTag.Invoke();
             }
-            if(IsTag)
+            
+            if(UseAnotherTag)
             {
-                if(other.tag != EnteredTag)
+                if(other.tag == EnteredTag)
                 {
-                    consequencesTag.Invoke();
-                    return;
+                    consequencesAnotherTag.Invoke();
                 }
             }
+            if (other.tag != EnteredTag && other.tag != tag)
+            {
+                elseTagConsequences.Invoke();
+                return;
+            }
+        }
+        else
+        {
+            consequences.Invoke();
         }
     }
 
@@ -72,7 +79,7 @@ public class OnTriggerPlus : MonoBehaviour
                 }
             }
         }
-        consequencesSameTag.Invoke();
+        consequences.Invoke();
     }
 }
 

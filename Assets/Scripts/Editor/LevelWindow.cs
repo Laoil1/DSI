@@ -5,12 +5,13 @@ using UnityEditor;
 
 public enum LevelWindowTab
 {
-
+    Level,
+    ChunkGroups
 }
 
 public class LevelWindow : EditorWindow
 {
-
+    private LevelWindowTab lwt = LevelWindowTab.Level;
     private LevelGenerator lg;
 
     #region Initialisation 
@@ -43,21 +44,17 @@ public class LevelWindow : EditorWindow
     // Update is called once per frame
     private void OnGUI()
     {
-        //LevelNumber
-        EditorGUILayout.LabelField("You have " + lg.listOfLevels.Count + " Levels");
-        LevelsAddOrRemoveGUI();
+        ChooseWindowGUI();
 
-        //Divide Level
-        DivideLevel();
-
-        //ShowCurrentLevelGroup
-        if(lg.currentLevelGroup != null)
+        switch (lwt)
         {
-            ShowLevelGroupInfo(lg.currentLevelGroup);
+            case LevelWindowTab.Level:
+                LevelWindowGUI();
+                break;
+            case LevelWindowTab.ChunkGroups:
+                ChunkGroupWindowGUI();
+                break;
         }
-
-        //GenerateLEvelButton
-        GenerateLevelGUI();
 
     }
 
@@ -153,14 +150,18 @@ public class LevelWindow : EditorWindow
         level.LevelColorTwo = EditorGUILayout.ColorField("ColorTwo ", level.LevelColorTwo);
 
         level.MaxComboColor = EditorGUILayout.IntField("Max ComboColor", level.MaxComboColor);
-        level.NumberOfObstacle = EditorGUILayout.IntField("Number Of Obstacle", level.NumberOfObstacle);
+
+        level.chunkRandom = EditorGUILayout.Toggle("Are Chunks Randoms ?", level.chunkRandom);
+        if(level.chunkRandom)
+            level.NumberOfChunks = EditorGUILayout.IntField("Number Of Chunks if Random", level.NumberOfChunks);
 
         level.ObstacleSpeed = EditorGUILayout.FloatField("ObstacleSpeed", level.ObstacleSpeed);
 
         level.TimeBetweenObstacle = EditorGUILayout.FloatField("TimeBetweenObstacle", level.TimeBetweenObstacle);
         level.RandomTimeAddBetweenObstacle = EditorGUILayout.FloatField("RandomTimeAddBetweenObstacle", level.RandomTimeAddBetweenObstacle);
 
-        GetObstacle(level.chunkGroup);
+
+        GetChunkGroup(level.chunksGroup);
 
         SettingDirty();
 
@@ -170,22 +171,23 @@ public class LevelWindow : EditorWindow
     {
         if(GUILayout.Button("GENERATE ALL LEVELS"))
         {
+            Debug.Log("generateLevels");
             lg.GenerateLevel();
             SettingDirty();
         }
     }
 
-    private void GetObstacle(List<TypeOfObstacle> chunkGroup)
+    private void GetChunkGroup(List<ChunkGroup> chunkGroup)
     {
 
         for (int i = 0; i < chunkGroup.Count; i++)
         {
-            chunkGroup[i] = (TypeOfObstacle)EditorGUILayout.EnumPopup("Obstacles " + i.ToString(), chunkGroup[i]);
+            chunkGroup[i] = GetChunkGroupFromList("Chunk Group" + i, lg.chunkGroups, i);
         }
 
         if (GUILayout.Button("+", GUILayout.Width(100)))
         {
-            chunkGroup.Add(TypeOfObstacle.Rectangle);
+            chunkGroup.Add(lg.chunkGroups[0]);
         }
 
         if (GUILayout.Button("-", GUILayout.Width (100)))
@@ -196,8 +198,116 @@ public class LevelWindow : EditorWindow
         EditorGUILayout.LabelField("");
     }
 
+
+    private void ChunkGroupWindowGUI()
+    {
+        ChunckGroupChoice();
+        if(lg.currentChunkGroup != null)
+        {
+            ChunckGroupInfo(lg.currentChunkGroup);
+        }
+    }
+
+    private void ChunckGroupChoice()
+    {
+        if (lg.currentChunkGroup != null && lg.chunkGroups != null && lg.chunkGroups.Count > 0)
+        {
+            lg.currentChunkGroup = GetChunkGroupFromList("CurrentChunkGroup", lg.chunkGroups, lg.chunkGroups.IndexOf(lg.currentChunkGroup));
+        }
+
+        EditorGUILayout.BeginHorizontal();
+
+        if (GUILayout.Button("+"))
+        {
+            lg.AddChunkGroup();
+            lg.currentChunkGroup = lg.chunkGroups[lg.chunkGroups.Count - 1];
+            SettingDirty();
+        }
+
+        if (GUILayout.Button("-"))
+        {
+            lg.chunkGroups.RemoveAt(lg.chunkGroups.Count - 1);
+            SettingDirty();
+        }
+        EditorGUILayout.EndHorizontal();
+    }
+
+    private void ChunckGroupInfo(ChunkGroup chunkGroup)
+    {
+
+        chunkGroup.name = EditorGUILayout.TextField("Name", chunkGroup.name);
+
+        for (int i = 0; i < chunkGroup.typeOfObstacle.Count; i++)
+        {
+            chunkGroup.typeOfObstacle[i] = (TypeOfObstacle)EditorGUILayout.EnumPopup("Obstacles " + i.ToString(), chunkGroup.typeOfObstacle[i]);
+        }
+
+        if (GUILayout.Button("+", GUILayout.Width(100)))
+        {
+            chunkGroup.typeOfObstacle.Add(TypeOfObstacle.Rectangle);
+        }
+
+        if (GUILayout.Button("-", GUILayout.Width(100)))
+        {
+            chunkGroup.typeOfObstacle.RemoveAt(chunkGroup.typeOfObstacle.Count - 1);
+        }
+
+        SettingDirty();
+    }
+
+    private void ChooseWindowGUI()
+    {
+        EditorGUILayout.BeginHorizontal();
+        
+        if(GUILayout.Button("Levels"))
+        {
+            lwt = LevelWindowTab.Level;
+        }
+
+        if (GUILayout.Button("ChunkGroups"))
+        {
+            lg.currentChunkGroup = lg.chunkGroups[0];
+            lwt = LevelWindowTab.ChunkGroups;
+        }
+
+        EditorGUILayout.EndHorizontal();
+    }
+
+    private void LevelWindowGUI()
+    {
+        //LevelNumber
+        EditorGUILayout.LabelField("You have " + lg.listOfLevels.Count + " Levels");
+        LevelsAddOrRemoveGUI();
+
+        //Divide Level
+        DivideLevel();
+
+        //ShowCurrentLevelGroup
+        if (lg.currentLevelGroup != null)
+        {
+            ShowLevelGroupInfo(lg.currentLevelGroup);
+        }
+
+        //GenerateLEvelButton
+        GenerateLevelGUI();
+    }
+
+    private ChunkGroup GetChunkGroupFromList (string label, List<ChunkGroup> list,int index)
+    {
+        string[] _nameList = new string[list.Count];
+        for (int i = 0; i < list.Count; i++)
+        {
+            _nameList[i] = list[i].name;
+        }
+
+        //var index = list.IndexOf(currentchunkGroup);
+        var _targetIndex = EditorGUILayout.Popup(label, index, _nameList);
+
+        return list[_targetIndex];
+    }
     private void SettingDirty()
     {
         EditorUtility.SetDirty(lg);
     }
+
 }

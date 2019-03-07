@@ -139,9 +139,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTag: 1
   UseSameTag: 1
-  EnteredTag: 
+  UseAnotherTag: 1
+  EnteredTag: ChangeLevel
   is2D: 0
   consequences:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  consequencesAnotherTag:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -277,7 +283,12 @@ PrefabInstance:
         type: 3}
       propertyPath: LightsModule.light
       value: 
-      objectReference: {fileID: 7316825019856286480}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347727730263954460, guid: 506cbfd68e1c1714d95f7578ff9e4e0e,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347727731159598115, guid: 506cbfd68e1c1714d95f7578ff9e4e0e,
         type: 3}
       propertyPath: playOnAwake
@@ -294,12 +305,6 @@ Transform:
 --- !u!198 &7316825020333904440 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6347727731159598115, guid: 506cbfd68e1c1714d95f7578ff9e4e0e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4439772065202656795}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &7316825019856286480 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 6347727731620455691, guid: 506cbfd68e1c1714d95f7578ff9e4e0e,
     type: 3}
   m_PrefabInstance: {fileID: 4439772065202656795}
   m_PrefabAsset: {fileID: 0}

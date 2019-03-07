@@ -74,7 +74,10 @@ public class InstantiateObstacle : MonoBehaviour
         if (mr != null)
             mr.enabled = true;
         cs = colorState;
-        SetColor();
+
+        if(typeOfEnemy != TypeOfObstacle.ChangeLevel)
+            SetColor();
+
         self.position = pos;
         cm.speed = speed;
         cm.LaunchMove();

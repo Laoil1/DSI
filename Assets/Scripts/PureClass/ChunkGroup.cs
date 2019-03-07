@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct ChunkGroup 
-{
+public class ChunkGroup { 
 
-    public TypeOfObstacle typeOfObstacle;
+    public List<TypeOfObstacle> typeOfObstacle =  new List<TypeOfObstacle>();
 
-    public float percent;
-    
+    public string name = "CG001";
+
+    public ChunkGroup(string Name)
+    {
+        name = Name;
+    }
 }
