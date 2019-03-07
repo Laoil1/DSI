@@ -35,13 +35,10 @@ public class LevelManager : MonoBehaviour
         LaunchCallLevel();
     }
     
-    public IEnumerator ChangeLevel()
+    public void ChangeLevel()
     {
-        waitDuringLevel = true;
 
         currentLevel = lg.listOfLevels[currentLevel.LevelNumber + 1];
-
-        yield return new WaitForSeconds(waitBetweenLevel);
 
         atTheStartOfLevel.Invoke();
 
@@ -53,8 +50,10 @@ public class LevelManager : MonoBehaviour
         obstacleInt++;
         if(obstacleInt >= currentLevel.NumberOfObstacle)
         {
-            StartCoroutine(ChangeLevel());
+            StartCoroutine(CallLevel(TypeOfObstacle.ChangeLevel));
+            waitDuringLevel = true;
         }
+
     }
 
     public void AttributeColor()
@@ -114,5 +113,13 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(CallLevel());
     }
 
+    private IEnumerator CallLevel(TypeOfObstacle typeOfObstacle)
+    {
+        var delay = currentLevel.TimeBetweenObstacle + Random.Range(-currentLevel.RandomTimeAddBetweenObstacle, currentLevel.RandomTimeAddBetweenObstacle);
+
+        yield return new WaitForSeconds(delay);
+
+        csAccumulatr = pm.GetAvalaibleEnemy(typeOfObstacle).Instantiate(startTransform, currentLevel.ObstacleSpeed, ColorState.ColorOne);
+    }
 
 }

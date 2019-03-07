@@ -153,7 +153,6 @@ MonoBehaviour:
   IsTag: 1
   UseSameTag: 1
   EnteredTag: 
-  IgnoredTag: 
   is2D: 0
   consequences:
     m_PersistentCalls:
@@ -196,7 +195,7 @@ MonoBehaviour:
   matOne: {fileID: 2100000, guid: c4055895ec5936244975f1b5ddea4ed1, type: 2}
   matTwo: {fileID: 2100000, guid: 190aca532f5585343ab6a74e9718e336, type: 2}
   cs: 0
-  typeOfEnemy: 2
+  typeOfEnemy: 1
   OnInstantiate:
     m_PersistentCalls:
       m_Calls: []

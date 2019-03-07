@@ -21,6 +21,7 @@ public enum TypeOfObstacle
     Canon,
     Spike,
     Snake*/
+    ChangeLevel,
 }
 
 public class InstantiateObstacle : MonoBehaviour

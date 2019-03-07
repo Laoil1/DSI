@@ -23,6 +23,7 @@ public class PullManager : MonoBehaviour
 
     public InstantiateObstacle GetAvalaibleEnemy(TypeOfObstacle typeOfEnnemy)
     {
+        Debug.Log(typeOfEnnemy);
         foreach (var ene in listEnemy)
         {
             if (ene.availaible == true)
