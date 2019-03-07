@@ -104,9 +104,10 @@ public class LevelGenerator : ScriptableObject
     {
         if(levelDivide==1)
         {
+            Debug.Log("Generate Level");
             for (int i = 0; i < levelGroups.Count; i++)
             {
-                AddOneLevel(levelGroups[i]);
+                AddOneLevel(levelGroups[i],i);
             }
         }
         else
@@ -147,7 +148,10 @@ public class LevelGenerator : ScriptableObject
     }
 
 
-
+    public void AddOneLevel(Level level, int number)
+    {
+        listOfLevels[number] = level;
+    }
     public void AddOneLevel(Level level)
     {
         listOfLevels[listOfLevels.Count - 1] = level;

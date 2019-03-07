@@ -5,9 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ChunkGroup 001", menuName = "DSI/ChunkGroup", order = 12)]
 public class ChunkGroup : ScriptableObject{ 
 
-    public List<TypeOfObstacle> typeOfObstacle =  new List<TypeOfObstacle>();
-    public List<float> timeBeforeNext = new List<float>();
-    public List<float> speed = new List<float>();
+    public List<TypeOfObstacle> typeOfObstacle;
+    public List<float> timeBeforeNext;
+    public List<float> speed;
+
+    public int numberOfElement;
 
     public ChunkGroup(string Name)
     {
@@ -28,6 +30,9 @@ public class ChunkGroup : ScriptableObject{
         {
             speed = new List<float>();
         }
+
+        numberOfElement++;
+
         timeBeforeNext.Add(1.5f);
         typeOfObstacle.Add(TypeOfObstacle.Rectangle);
         speed.Add(7f);
@@ -35,6 +40,11 @@ public class ChunkGroup : ScriptableObject{
 
     public void RemoveOneElements()
     {
+        numberOfElement--;
+        if(numberOfElement<=0)
+        {
+            numberOfElement = 0;
+        }
         typeOfObstacle.RemoveAt(typeOfObstacle.Count - 1);
         timeBeforeNext.RemoveAt(typeOfObstacle.Count - 1);
         speed.RemoveAt(typeOfObstacle.Count - 1);

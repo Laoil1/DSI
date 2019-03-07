@@ -29,7 +29,11 @@ public class PullManager : MonoBehaviour
             if (ene.availaible == true)
             {
                 if (ene.typeOfEnemy == typeOfEnnemy)
+                {
                     return ene;
+                    Debug.Log(ene);
+
+                }
             }
         }
         return null;

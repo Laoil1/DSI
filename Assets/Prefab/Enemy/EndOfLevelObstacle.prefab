@@ -136,7 +136,7 @@ MonoBehaviour:
   matOne: {fileID: 0}
   matTwo: {fileID: 0}
   cs: 0
-  typeOfEnemy: 6
+  typeOfEnemy: 7
   OnInstantiate:
     m_PersistentCalls:
       m_Calls:

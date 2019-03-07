@@ -80,6 +80,7 @@ public class LevelManager : MonoBehaviour
                 yield return new WaitWhile(() => isChunkLaunched);
                 isChunkLaunched = true;
                 StartCoroutine(CallChunkGroup(chunkGroup));
+                Debug.Log(chunkGroup.numberOfElement);
             }
 
         }
@@ -101,7 +102,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator CallChunkGroup(ChunkGroup chunkGroup)
     {
-        for (var i = 0; i< chunkGroup.typeOfObstacle.Count; i++)
+        for (var i = 0; i< chunkGroup.numberOfElement; i++)
         {
             var delay = chunkGroup.timeBeforeNext[i];
 

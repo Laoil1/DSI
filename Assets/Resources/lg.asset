@@ -18,237 +18,208 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 1
     MaxComboColor: 3
-    NumberOfChunks: 4
+    NumberOfChunks: 1
     chunkRandom: 0
-    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorOne: {r: 1, g: 0, b: 0, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
     - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 1.6
+    ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 4
+    NumberOfChunks: 0
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 2.2
+    ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 4
+    NumberOfChunks: 0
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 3
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 2.8000002
+    ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 4
+    NumberOfChunks: 0
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 4
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 3.4
-    MaxComboColor: 4
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 5
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 4
-    MaxComboColor: 4
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 6
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 4.6000004
-    MaxComboColor: 4
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 7
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 5.2
-    MaxComboColor: 5
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 8
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 5.8
-    MaxComboColor: 5
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 9
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
-    ObstacleSpeed: 6.3999996
-    MaxComboColor: 5
-    NumberOfChunks: 4
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
-    - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
+    chunksGroup: []
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 11
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 12
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 13
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 14
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 4
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 15
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 4
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 16
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 4
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 17
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 5
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 18
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 5
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 19
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
-    MaxComboColor: 5
-    NumberOfChunks: 0
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
+    chunksGroup: []
   - LevelNumber: 20
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
@@ -258,13 +229,13 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup: []
-  levelDivide: 10
-  tempLevelDivide: 10
+  levelDivide: 1
+  tempLevelDivide: 1
   numberOfLevel: 0
   currentLevelGroup:
     LevelNumber: 0
@@ -272,12 +243,11 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 1
     MaxComboColor: 3
-    NumberOfChunks: 4
-    chunkRandom: 1
-    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    NumberOfChunks: 1
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 0, b: 0, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
     - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
   levelGroups:
   - LevelNumber: 0
@@ -285,14 +255,13 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 1
     MaxComboColor: 3
-    NumberOfChunks: 4
-    chunkRandom: 1
-    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    NumberOfChunks: 1
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 0, b: 0, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup:
-    - {fileID: 11400000, guid: 59a8e64bb71a1d4499aa3ef934a3a636, type: 2}
     - {fileID: 11400000, guid: ff0a58f199553c0469b89c3a232799b9, type: 2}
-  - LevelNumber: 10
+  - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
@@ -301,14 +270,193 @@ MonoBehaviour:
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunksGroup:
-    - {fileID: 0}
-  - LevelNumber: 20
+    chunksGroup: []
+  - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
     NumberOfChunks: 0
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 3
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 0
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 4
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 5
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 6
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 7
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 8
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 9
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 10
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 11
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 12
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 13
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 14
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 15
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 16
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 17
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 18
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 19
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  - LevelNumber: 20
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
@@ -318,13 +466,20 @@ MonoBehaviour:
     RandomTimeAddBetweenObstacle: 0.5
     ObstacleSpeed: 7
     MaxComboColor: 3
-    NumberOfChunks: 0
+    NumberOfChunks: 3
     chunkRandom: 0
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
     chunksGroup: []
-  chunkGroups:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - LevelNumber: 21
+    TimeBetweenObstacle: 1.5
+    RandomTimeAddBetweenObstacle: 0.5
+    ObstacleSpeed: 7
+    MaxComboColor: 3
+    NumberOfChunks: 3
+    chunkRandom: 0
+    LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
+    LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
+    chunksGroup: []
+  chunkGroups: []
   currentChunkGroup: {fileID: 0}

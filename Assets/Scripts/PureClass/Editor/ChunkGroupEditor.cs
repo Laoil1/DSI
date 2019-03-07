@@ -38,7 +38,7 @@ public class ChunkGroupEditor : Editor
     private void DisplayChunk ()
     {
         if(targetCG.typeOfObstacle != null)
-        for (int i = 0; i < targetCG.typeOfObstacle.Count; i++)
+        for (int i = 0; i < targetCG.numberOfElement; i++)
         {
             EditorGUILayout.BeginVertical("box");
 
