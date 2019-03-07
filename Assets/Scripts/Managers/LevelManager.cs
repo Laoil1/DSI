@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
@@ -27,6 +28,12 @@ public class LevelManager : MonoBehaviour
     public UnityEvent atTheStartOfLevel;
 
     private int obstacleInt;
+
+    //Test
+    public void DisplayeLevelNumber(Text text)
+    {
+        text.text = currentLevel.LevelNumber.ToString();
+    }
 
     public void Awake()
     {
