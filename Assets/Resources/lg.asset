@@ -21,7 +21,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 1
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -30,7 +30,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 2
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -39,7 +39,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 3
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -48,7 +48,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 4
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -57,7 +57,7 @@ MonoBehaviour:
     NumberOfObstacle: 4
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 5
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -66,7 +66,7 @@ MonoBehaviour:
     NumberOfObstacle: 4
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 6
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -75,7 +75,7 @@ MonoBehaviour:
     NumberOfObstacle: 4
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 7
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -84,7 +84,7 @@ MonoBehaviour:
     NumberOfObstacle: 5
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 8
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -93,7 +93,7 @@ MonoBehaviour:
     NumberOfObstacle: 5
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 9
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -102,7 +102,7 @@ MonoBehaviour:
     NumberOfObstacle: 5
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5
@@ -214,7 +214,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   levelGroups:
   - LevelNumber: 0
     TimeBetweenObstacle: 1.5
@@ -224,7 +224,7 @@ MonoBehaviour:
     NumberOfObstacle: 3
     LevelColorOne: {r: 1, g: 1, b: 1, a: 1}
     LevelColorTwo: {r: 0, g: 0, b: 0, a: 1}
-    chunkGroup: 050000000500000005000000
+    chunkGroup: 000000000000000000000000
   - LevelNumber: 10
     TimeBetweenObstacle: 1.5
     RandomTimeAddBetweenObstacle: 0.5

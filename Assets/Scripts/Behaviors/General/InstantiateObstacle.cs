@@ -69,7 +69,10 @@ public class InstantiateObstacle : MonoBehaviour
 
     public ColorState Instantiate(Vector3 pos, float speed, ColorState colorState)
     {
-        gameObject.SetActive(true);
+        if (col != null)
+            col.enabled = true;
+        if (mr != null)
+            mr.enabled = true;
         cs = colorState;
         SetColor();
         self.position = pos;

@@ -12,6 +12,7 @@ public class OnTriggerPlus : MonoBehaviour
     public bool IsTag;
     public bool UseSameTag;
     public string EnteredTag;
+    public string EnteredTagTwo;
 
     public bool is2D;
     public UnityEvent consequences;
