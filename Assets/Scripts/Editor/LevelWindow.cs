@@ -182,7 +182,7 @@ public class LevelWindow : EditorWindow
 
         for (int i = 0; i < chunkGroup.Count; i++)
         {
-            chunkGroup[i] = GetChunkGroupFromList("Chunk Group" + i, lg.chunkGroups, i);
+            chunkGroup[i] = GetChunkGroupFromList("Chunk Group" + i, lg.chunkGroups, lg.chunkGroups.IndexOf(chunkGroup[i]));
         }
 
         if (GUILayout.Button("+", GUILayout.Width(100)))
