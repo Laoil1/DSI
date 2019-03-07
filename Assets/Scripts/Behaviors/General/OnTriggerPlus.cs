@@ -15,7 +15,8 @@ public class OnTriggerPlus : MonoBehaviour
     public string EnteredTagTwo;
 
     public bool is2D;
-    public UnityEvent consequences;
+    public UnityEvent consequencesSameTag;
+    public UnityEvent consequencesTag;
     public UnityEvent elseTagConsequences;
 
 
@@ -29,21 +30,22 @@ public class OnTriggerPlus : MonoBehaviour
         {
             if (UseSameTag)
             {
-                if (other.tag != tag)
+                if (other.tag != tag || other.tag !=EnteredTag)
                 {
                     elseTagConsequences.Invoke();
                     return;
                 }
+                consequencesSameTag.Invoke();
             }
-            else
+            if(IsTag)
             {
                 if(other.tag != EnteredTag)
                 {
+                    consequencesTag.Invoke();
                     return;
                 }
             }
         }
-        consequences.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -70,7 +72,7 @@ public class OnTriggerPlus : MonoBehaviour
                 }
             }
         }
-        consequences.Invoke();
+        consequencesSameTag.Invoke();
     }
 }
 
